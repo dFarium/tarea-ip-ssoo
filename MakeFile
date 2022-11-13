@@ -1,0 +1,4 @@
+#Compilacion
+test-ip: test-ip.cpp
+	g++ -o test-ip.cpp
+
