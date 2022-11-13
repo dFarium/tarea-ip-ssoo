@@ -20,6 +20,11 @@ string packet;
 mutex mtx;
 
 int main(int argc, char * argv[]) {
+    if(argv[1] == NULL ||argv[2] == NULL){
+        cout << "No se han puestos los parametros necesarios para la ejecucion" << endl;
+        cout << "Cerrando..." << endl;
+        return -1;
+    }
     packet = argv[2];
     int totalIp = 0;
     totalIp=countIp(argv[1]);
